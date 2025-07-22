@@ -203,3 +203,185 @@ yu m install docker
 kvm需要硬件cpu的虚拟化支持，但是容器不需要的
 
 启动一个kvm虚拟机必须要有一个完整的开机流程，
+
+kvm需要硬件cpu的虚拟化的支持
+
+更佳高校的利用系统资源，
+
+传递镜像文件就可以了，windows下开发的，利用docker的镜像部署，测试服务器的，开发测试服务器，限制测试服务器和生产服务器一致的
+
+跨平台，跨系统的，系统依赖冲突，导致难以部署等的bug
+
+除了内核以外的完整的运行的环境，确保了应用环境的一致性的
+
+更轻松的迁移
+
+docker的使用情况
+
+应用程序非常之多，
+
+## docker的安装部署的
+
+c/s架构的
+
+server docker daemon
+
+api接口的，rest api
+docker客户端的命令行的，
+
+网络，容器，镜像，数据卷的，
+
+容器有一定的网络，外部的应用访问容器的，自己的网络，镜像images，跑的容器镜像生成容器的，
+
+
+镜像
+
+容器网络存储的
+
+<img width="311" height="194" alt="image" src="https://github.com/user-attachments/assets/8cdd2b76-1c76-418f-9615-d6748ed88e04" />
+
+
+客户端，基于dockerfile构建镜像，自己构建镜像或者下载别人的家ing想，启动docker容器的
+
+
+镜像，容器的，服务器的，docker主机的
+
+# docker安装部署
+
+image镜像，构建容器，程序运行苏需要的环境打包成文件
+
+container
+容器，应用程序保存在容器当中
+
+镜像仓库：保存镜像文件，提供上传，下载镜像的，
+
+dockerfile部署项目的操作写成一个部署的脚本的
+
+构建容器的过程就是运行镜像m
+conatiner就是容器的镜像的运行实例的，
+
+docker的安装的，镜像仓库
+
+安装docker，
+
+提前准备好一个宿主几的，安装docker去使用的
+
+虚拟化+容器的技术的
+
+基于虚拟化的手段创建大量的虚拟机的，容器的
+
+可以是笔记本公司的服务器的，
+
+机器的基础之上的，上层的虚拟机的
+
+guestos，
+
+虚拟机的
+
+yu m makecahce
+
+systectl disable firewalid
+
+基础的环境配置的
+
+centos7平台不低于3.10的
+
+sysctl -p /etc/sysctl.d/docker.conf
+
+添加完毕之后的，提前配置好的yun的仓库的
+
+阿里云自带的仓库的，yumlist docker-ce--showduplicates | soirt -r
+
+可以直接yum安装docker的
+
+yum list
+
+配置docker加速器的
+
+获取镜像文件的，使用最终的容器必须要有对应的镜像的,docker.pub下载
+systemctl restart docker
+
+docker ps
+
+docker images
+
+cs架构的，是否正确启动的
+
+# dokcer的实际的操作使用的
+
+获取镜像
+
+运行镜像生成容器的
+
+nginx，web服务器的，运行一个80端口的网站的
+
+开启服务器
+
+2.服务器上安装好运行nginx所需要的依赖关系的
+
+安装nginx，yum install nginx -y
+修改nginx配置文件
+
+客户端去访问nignx
+
+用docker获取nginx怎么做？
+
+1.获取镜像，从你配置的docker镜像站当中
+
+docker pull nginx
+
+先搜索一下镜像文件是否存在的，docker search nginx
+
+
+dock er pull nginx
+
+latest
+
+docker images ls
+查看本地的镜像有哪些？
+
+docker rumi d la364db548ctd
+
+删除镜像的命令
+
+docker rmi 镜像id
+
+Digest，Status
+dock er image ls
+
+运行镜像运行处具体的容器，然后这个容器当中跑出一个nginx服务的
+
+docker run参数 镜像的名字/id
+
+-d 后台的运行容器的
+
+-p 80:90 端口的映射，宿主几端口“容器内的端口的
+
+你访问宿主几的端口的
+
+镜像的管理
+
+容器的管理
+
+dock er ps的
+此时访问服务端的端口的，nginx，
+nets ta te -tunlp
+
+/docker
+
+停止容器，查看结果
+dock er stop.容器id
+
+m诶呦存活当中的容器的
+
+dock er start容器id
+
+跑到容器当中docker start/stop就可以的
+
+
+
+dock er build构建dock erfile 生成镜像， dock儿images
+
+localdocker instance存储在机器的本地的，
+
+
